@@ -1,16 +1,20 @@
-package server;
+package sockets.server;
 
-import java.io.*;
+import utils.StoredData;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * Send requested weather dates to a client
+ * Send requested dates to a client
  *
- * @author Ul
+ * @author Uli
  * @version 0.3
  */
-
 public class Server {
 
     /**
@@ -22,6 +26,15 @@ public class Server {
      * Data store of server
      */
     private StoredData storedData;
+
+    /**
+     * Getter
+     *
+     * @return data store of Server
+     */
+    public StoredData getStoredData() {
+        return storedData;
+    }
 
     /**
      * Socket of Server
@@ -42,6 +55,14 @@ public class Server {
      * PrintWriter to write to Client
      */
     private PrintWriter clientWriter;
+
+    /**
+     * Constructor
+     */
+    public Server() {
+        super();
+        this.port = 5173;
+    }
 
     /**
      * Constructor
@@ -87,7 +108,7 @@ public class Server {
      *
      * @throws IOException from ServerSocket class
      */
-    private void shutdownServer() throws IOException {
+    void shutdownServer() throws IOException {
         clientSocket.close();
         serverSocket.close();
         clientWriter.close();
