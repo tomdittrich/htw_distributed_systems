@@ -12,7 +12,7 @@ import java.net.Socket;
 /**
  * Send requested dates to a client
  *
- * @author Uli
+ * @author Ulrich Overdieck s0556056@htw-berlin.de
  * @version 0.3
  */
 public class Server {
@@ -76,6 +76,14 @@ public class Server {
         this.storedData = storedData;
     }
 
+    /**
+     * Port of Server
+     *
+     * @return Port of server
+     */
+    public int getPort() {
+        return port;
+    }
 
     /**
      * Server starts and waits for 1st client to connect, processes request and responses to this client.

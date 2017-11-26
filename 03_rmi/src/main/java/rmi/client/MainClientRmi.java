@@ -11,8 +11,9 @@ public class MainClientRmi {
 
         final String SERVER_IP = "127.0.0.1";
         final int SERVER_PORT = 10999;
+        final String REGISTRY_NAME = "Hello WEATHER";
 
-        ClientRmi theClient = new ClientRmi(SERVER_IP, SERVER_PORT);
+        ClientRmi theClient = new ClientRmi(SERVER_IP, SERVER_PORT, REGISTRY_NAME);
         try {
             theClient.connectToServer();
             theClient.useCLI();

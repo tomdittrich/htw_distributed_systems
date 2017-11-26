@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * Stored csv data
  *
- * @author Uli
+ * @author Ulrich Overdieck s0556056@htw-berlin.de
  * @version 0.1
  */
 public class StoredCsvData implements StoredData {

@@ -8,7 +8,7 @@ import java.rmi.RemoteException;
 /**
  * Weather Client interface
  *
- * @author Uli
+ * @author Ulrich Overdieck s0556056@htw-berlin.de
  * @version 1.0
  */
 public interface WeatherClient extends Remote {

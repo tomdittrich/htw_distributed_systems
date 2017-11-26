@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Stored data interface
  *
- * @author Uli
+ * @author Ulrich Overdieck s0556056@htw-berlin.de
  * @version 0.1
  */
 public interface StoredData {

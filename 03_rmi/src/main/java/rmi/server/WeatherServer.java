@@ -11,18 +11,10 @@ import java.util.List;
 /**
  * Weather Server interface
  *
- * @author Uli
+ * @author Ulrich Overdieck s0556056@htw-berlin.de
  * @version 0.1
  */
 public interface WeatherServer extends Remote {
-
-    /**
-     * Test method ("hello world")
-     *
-     * @return any message
-     * @throws RemoteException as required
-     */
-    String sayHello() throws RemoteException;
 
     /**
      * Get temperatures of requested day from weatherServer

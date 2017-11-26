@@ -25,6 +25,7 @@ public class ClientRmi extends Client implements WeatherClient {
     private Registry registry;
     private WeatherServer stub;
     private WeatherClient clientStub;
+    private String registryName;
 
     /**
      * Default Constructor, with a predefined localhost server and port 10999
@@ -36,19 +37,22 @@ public class ClientRmi extends Client implements WeatherClient {
     /**
      * Constructor
      *
-     * @param serverIP   server ip
+     * @param serverIP server ip
      * @param serverPort server port
+     * @param registryName name of registry
      */
-    public ClientRmi(String serverIP, int serverPort) {
+    public ClientRmi(String serverIP, int serverPort, String registryName) {
         super(serverIP, serverPort);
+        this.registryName = registryName;
     }
 
-    /**
-     * Registers the client for update notifications
-     *
-     * @return registration gone? true
-     * @throws RemoteException
-     */
+
+        /**
+         * Registers the client for update notifications
+         *
+         * @return registration gone? true
+         * @throws RemoteException
+         */
     public boolean register() throws RemoteException {
         clientStub = (WeatherClient) UnicastRemoteObject.exportObject(this, 0);
         return stub.register(clientStub);
@@ -86,8 +90,8 @@ public class ClientRmi extends Client implements WeatherClient {
     @Override
     public void connectToServer() throws RemoteException, NotBoundException {
         registry = LocateRegistry.getRegistry(serverIP, serverPort);
-        stub = (WeatherServer) registry.lookup("Hello WEATHER");
-        System.out.println(stub.sayHello());
+        stub = (WeatherServer) registry.lookup(registryName);
+        System.out.println("Connection established...");
     }
 
     /**
