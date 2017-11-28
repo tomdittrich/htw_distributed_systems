@@ -17,14 +17,6 @@ import java.util.List;
 public interface WeatherServer extends Remote {
 
     /**
-     * Test method ("hello world")
-     *
-     * @return any message
-     * @throws RemoteException as required
-     */
-    String sayHello() throws RemoteException;
-
-    /**
      * Get temperatures of requested day from weatherServer
      *
      * @param date request date (only day info is used)

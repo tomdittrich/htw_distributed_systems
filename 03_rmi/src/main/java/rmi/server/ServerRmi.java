@@ -122,11 +122,6 @@ public class ServerRmi extends Server implements WeatherServer {
     }
 
     @Override
-    public String sayHello() throws RemoteException {
-        return "Connection established...";
-    }
-
-    @Override
     public List<MeasurePoint> getTemperatures(Date date) throws RemoteException {
         ArrayList<MeasurePoint> tempMeasurePoints = new ArrayList<>();
         int counter = 0;
