@@ -91,7 +91,7 @@ public class ClientRmi extends Client implements WeatherClient {
     public void connectToServer() throws RemoteException, NotBoundException {
         registry = LocateRegistry.getRegistry(serverIP, serverPort);
         stub = (WeatherServer) registry.lookup(registryName);
-        System.out.println("Connection established...");
+        System.out.println(stub.sayHello());
     }
 
     /**

@@ -14,7 +14,8 @@ hs_err_pid*
 
 .idea/
 .settings/
-bin/
 .classpath
 .project
 .vscode
+target/
+bin/

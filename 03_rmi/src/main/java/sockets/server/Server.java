@@ -12,7 +12,7 @@ import java.net.Socket;
 /**
  * Send requested dates to a client
  *
- * @author Ulrich Overdieck s0556056@htw-berlin.de
+ * @author Uli
  * @version 0.3
  */
 public class Server {

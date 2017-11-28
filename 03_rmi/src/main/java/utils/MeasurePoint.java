@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * MeasurePoint class
  *
- * @author Ulrich Overdieck s0556056@htw-berlin.de
+ * @author Uli
  * @version 0.1
  */
 public class MeasurePoint implements Serializable {

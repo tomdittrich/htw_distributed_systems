@@ -6,7 +6,7 @@ import utils.StoredCsvData;
 /**
  * Main running app for the RMI weather server
  *
- * @author Ulrich Overdieck s0556056@htw-berlin.de
+ * @author Uli
  * @version 0.2
  */
 public class MainServerRmi {

@@ -7,7 +7,7 @@ import utils.StoredData;
 /**
  * Send requested dates to a client
  *
- * @author Ulrich Overdieck s0556056@htw-berlin.de
+ * @author Uli
  * @version 0.1
  */
 public abstract class Server {

@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * Send requested weather dates to a client per RMI
  *
- * @author Ulrich Overdieck s0556056@htw-berlin.de
+ * @author Uli
  * @version 0.3
  */
 public class ServerRmi extends Server implements WeatherServer {
@@ -119,6 +119,11 @@ public class ServerRmi extends Server implements WeatherServer {
             }
         }
         return tempStoredMeasurePoints;
+    }
+
+    @Override
+    public String sayHello() throws RemoteException {
+        return "Connection established...";
     }
 
     @Override
