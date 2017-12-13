@@ -30,7 +30,7 @@
                 <lastname>Rhodan</lastname>
                 <firstname>Perry</firstname>
                 <address>
-                    <street>Hausstr</street>
+                    <street>Terrania Str</street>
                     <streetNumber>15</streetNumber>
                     <postcode>10001</postcode>
                     <city>Berlin</city>
@@ -41,7 +41,7 @@
                 <lastname>Dorksteiger</lastname>
                 <firstname>Sichu</firstname>
                 <address>
-                    <street>Hausstr</street>
+                    <street>Terrania Str</street>
                     <streetNumber>15</streetNumber>
                     <postcode>10001</postcode>
                     <city>Berlin</city>
@@ -73,7 +73,7 @@
                 <lastname>daGonozal</lastname>
                 <firstname>Atlan</firstname>
                 <address>
-                    <street>Teichweg</street>
+                    <street>Arkoniden Gaesschen</street>
                     <streetNumber>104</streetNumber>
                     <postcode>2030</postcode>
                     <city>Burghausen</city>
@@ -183,7 +183,7 @@
                     <streetNumber>33</streetNumber>
                     <postcode>9150</postcode>
                     <city>Poprad</city>
-                    <country>Canada</country>
+                    <country>Slovakia</country>
                 </address>
             </passenger>
             <passenger>
