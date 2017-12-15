@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bookings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="555944_Dittrich.xsd">
+          xsi:noNamespaceSchemaLocation="tom.xsd">
 
     <booking bookingId="101">
         <flights>
