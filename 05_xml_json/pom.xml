@@ -14,11 +14,15 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.glassfish/javax.json -->
+
+        <!-- !!! -->
+        <!-- DEPRECATED better use https://www.mvnrepository.com/artifact/com.google.code.gson/gson-->
+        <!-- !!! -->
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
         <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.json</artifactId>
-            <version>1.1</version>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.jdom/jdom2 -->
