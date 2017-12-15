@@ -3,25 +3,21 @@ import org.jdom2.JDOMException;
 import java.io.IOException;
 
 /**
- * Description
+ * Main app for XML reading (flight bookings)
  *
  * @author Tom Dittrich s0555944@htw-berlin.de
- * @version 0.1
- * @date 15.12.17
+ * @version 0.8
  */
-public class ReaderXmlApp {
+public class ReaderXmlJdomApp {
     public static void main(String[] args) {
 
-        ReaderXmlJdom xmlReader = null;
         try {
-            xmlReader = new ReaderXmlJdom();
+            ReaderXmlJdom xmlReader = new ReaderXmlJdom();
+            System.out.println(xmlReader);
         } catch (JDOMException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        xmlReader.work();
-
     }
 }
