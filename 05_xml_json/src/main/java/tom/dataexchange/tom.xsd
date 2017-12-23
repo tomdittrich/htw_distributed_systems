@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="bookings">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="booking" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="flights">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="flight" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="departureLocation"/>
+                                                    <xs:element type="xs:date" name="departureDate"/>
+                                                    <xs:element type="xs:time" name="departureTime"/>
+                                                    <xs:element type="xs:string" name="destinationLocation"/>
+                                                    <xs:element type="xs:date" name="destinationDate"/>
+                                                    <xs:element type="xs:time" name="destinationTime"/>
+                                                    <xs:element type="xs:string" name="class"/>
+                                                    <xs:element type="xs:boolean" name="isSecureFlight"/>
+                                                </xs:sequence>
+
+                                                <xs:attribute name="flightId" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:pattern value="[A-Z0-9]{2}[0-9]{4}"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="passengers">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="passenger" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="lastname"/>
+                                                    <xs:element type="xs:string" name="firstname"/>
+                                                    <xs:element name="address">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="street"/>
+                                                                <xs:element type="xs:positiveInteger"
+                                                                            name="streetNumber"/>
+                                                                <xs:element type="xs:positiveInteger" name="postcode"/>
+                                                                <xs:element type="xs:string" name="city"/>
+                                                                <xs:element type="xs:string" name="country"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="price">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:double" name="amount"/>
+                                        <xs:element type="xs:string" name="curreny"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                        <xs:attribute type="xs:positiveInteger" name="bookingId" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="tom.xsd">
+
+    <booking bookingId="101">
+        <flights>
+            <flight flightId="SK4500">
+                <departureLocation>TXL</departureLocation>
+                <departureDate>1986-05-23</departureDate>
+                <departureTime>07:13:00</departureTime>
+                <destinationLocation>NYO</destinationLocation>
+                <destinationDate>1986-05-23</destinationDate>
+                <destinationTime>09:45:00</destinationTime>
+                <class>First</class>
+                <isSecureFlight>false</isSecureFlight>
+            </flight>
+            <flight flightId="SK4501">
+                <departureLocation>GOT</departureLocation>
+                <departureDate>1986-05-23</departureDate>
+                <departureTime>11:33:00</departureTime>
+                <destinationLocation>NYO</destinationLocation>
+                <destinationDate>1986-05-23</destinationDate>
+                <destinationTime>15:01:00</destinationTime>
+                <class>First</class>
+                <isSecureFlight>false</isSecureFlight>
+            </flight>
+        </flights>
+        <passengers>
+            <passenger>
+                <lastname>Rhodan</lastname>
+                <firstname>Perry</firstname>
+                <address>
+                    <street>Terrania Str</street>
+                    <streetNumber>15</streetNumber>
+                    <postcode>10001</postcode>
+                    <city>Berlin</city>
+                    <country>Germany</country>
+                </address>
+            </passenger>
+            <passenger>
+                <lastname>Dorksteiger</lastname>
+                <firstname>Sichu</firstname>
+                <address>
+                    <street>Terrania Str</street>
+                    <streetNumber>15</streetNumber>
+                    <postcode>10001</postcode>
+                    <city>Berlin</city>
+                    <country>Germany</country>
+                </address>
+            </passenger>
+        </passengers>
+        <price>
+            <amount>1200</amount>
+            <curreny>SEK</curreny>
+        </price>
+    </booking>
+
+    <booking bookingId="102">
+        <flights>
+            <flight flightId="LX1444">
+                <departureLocation>GVA</departureLocation>
+                <departureDate>1986-05-24</departureDate>
+                <departureTime>23:55:00</departureTime>
+                <destinationLocation>ZRH</destinationLocation>
+                <destinationDate>1986-05-25</destinationDate>
+                <destinationTime>01:01:00</destinationTime>
+                <class>Eco</class>
+                <isSecureFlight>false</isSecureFlight>
+            </flight>
+        </flights>
+        <passengers>
+            <passenger>
+                <lastname>daGonozal</lastname>
+                <firstname>Atlan</firstname>
+                <address>
+                    <street>Arkoniden Gaesschen</street>
+                    <streetNumber>104</streetNumber>
+                    <postcode>2030</postcode>
+                    <city>Burghausen</city>
+                    <country>Schweiz</country>
+                </address>
+            </passenger>
+        </passengers>
+        <price>
+            <amount>116.51</amount>
+            <curreny>CHF</curreny>
+        </price>
+    </booking>
+
+    <booking bookingId="103">
+        <flights>
+            <flight flightId="LH6010">
+                <departureLocation>DUS</departureLocation>
+                <departureDate>1986-05-25</departureDate>
+                <departureTime>09:43:00</departureTime>
+                <destinationLocation>CGN</destinationLocation>
+                <destinationDate>1986-05-25</destinationDate>
+                <destinationTime>10:20:00</destinationTime>
+                <class>First</class>
+                <isSecureFlight>true</isSecureFlight>
+            </flight>
+            <flight flightId="LH6410">
+                <departureLocation>CGN</departureLocation>
+                <departureDate>1986-05-25</departureDate>
+                <departureTime>18:03:00</departureTime>
+                <destinationLocation>FMO</destinationLocation>
+                <destinationDate>1986-05-25</destinationDate>
+                <destinationTime>18:55:00</destinationTime>
+                <class>Eco</class>
+                <isSecureFlight>true</isSecureFlight>
+            </flight>
+        </flights>
+        <passengers>
+            <passenger>
+                <lastname>Gucky</lastname>
+                <firstname>Plofre</firstname>
+                <address>
+                    <street>Tramper Str.</street>
+                    <streetNumber>1</streetNumber>
+                    <postcode>40227</postcode>
+                    <city>Duesseldorf</city>
+                    <country>Germany</country>
+                </address>
+            </passenger>
+        </passengers>
+        <price>
+            <amount>348.01</amount>
+            <curreny>EUR</curreny>
+        </price>
+    </booking>
+
+    <booking bookingId="104">
+        <flights>
+            <flight flightId="3H1110">
+                <departureLocation>YTZ</departureLocation>
+                <departureDate>1986-05-27</departureDate>
+                <departureTime>01:35:00</departureTime>
+                <destinationLocation>RKV</destinationLocation>
+                <destinationDate>1986-05-27</destinationDate>
+                <destinationTime>19:15:00</destinationTime>
+                <class>Eco</class>
+                <isSecureFlight>false</isSecureFlight>
+            </flight>
+        </flights>
+        <passengers>
+            <passenger>
+                <lastname>Tolot</lastname>
+                <firstname>Icho</firstname>
+                <address>
+                    <street>Stonestreet</street>
+                    <streetNumber>64</streetNumber>
+                    <postcode>35601</postcode>
+                    <city>Toronto</city>
+                    <country>Canada</country>
+                </address>
+            </passenger>
+        </passengers>
+        <price>
+            <amount>606.02</amount>
+            <curreny>CAD</curreny>
+        </price>
+    </booking>
+
+    <booking bookingId="105">
+        <flights>
+            <flight flightId="ED0910">
+                <departureLocation>BTS</departureLocation>
+                <departureDate>1986-05-28</departureDate>
+                <departureTime>19:15:00</departureTime>
+                <destinationLocation>BIO</destinationLocation>
+                <destinationDate>1986-05-28</destinationDate>
+                <destinationTime>23:59:59</destinationTime>
+                <class>First</class>
+                <isSecureFlight>false</isSecureFlight>
+            </flight>
+        </flights>
+        <passengers>
+            <passenger>
+                <lastname>Saedelaere</lastname>
+                <firstname>Alaska</firstname>
+                <address>
+                    <street>Cappin Hof</street>
+                    <streetNumber>33</streetNumber>
+                    <postcode>9150</postcode>
+                    <city>Poprad</city>
+                    <country>Slovakia</country>
+                </address>
+            </passenger>
+            <passenger>
+                <lastname>Yura</lastname>
+                <firstname>Samburi</firstname>
+                <address>
+                    <street>Kosmokratenweg</street>
+                    <streetNumber>101</streetNumber>
+                    <postcode>3601</postcode>
+                    <city>Bratislava</city>
+                    <country>Slovakia</country>
+                </address>
+            </passenger>
+        </passengers>
+        <price>
+            <amount>1023.99</amount>
+            <curreny>EUR</curreny>
+        </price>
+    </booking>
+
+</bookings>
